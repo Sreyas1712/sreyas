@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int a,flag,i;
+    scanf("%d",&a);
+    if(a==0||a==1){flag=2;}
+    for(i=2;i<a;i++){
+      if(a%i==0){
+        flag=1;
+      break;}
+    }
+    if(flag==1)
+    printf("composite number");
+    else if(flag==2)
+    printf("neither prime nor composite number");
+    else
+    printf("prime number");
+    return 0; 
+}
